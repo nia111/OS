@@ -209,11 +209,11 @@ def explain_with_spark():
     messages.append(ChatMessage(role="user", content=combined_prompt))
 
     spark = ChatSparkLLM(
-        spark_api_url='wss://spark-api.xf-yun.com/chat/pro-128k',
+        spark_api_url='wss://spark-api.xf-yun.com/v4.0/chat',
         spark_app_id='8a544194',
         spark_api_key='2ed096f501e1956119b3c06205ca766d',
         spark_api_secret='NGE0ZGVkZmE5OWE4NWJlNjdmNWQ3M2Y5',
-        spark_llm_domain='pro-128k',
+        spark_llm_domain='4.0Ultra',
         streaming=False
     )
 

@@ -130,9 +130,3 @@ for idx, input_data in enumerate(inputs):
     # 打印结果
     print(stdout)
 
-    # 错误处理
-    if stderr:
-        print(f"\n⚠️ 第 {idx + 1} 组 stderr 输出:\n{stderr}")
-
-    if process.returncode != 0:
-        print(f"⚠️ 第 {idx + 1} 组 Python 程序异常退出，返回码: {process.returncode}")
